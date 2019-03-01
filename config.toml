@@ -1,0 +1,6 @@
+baseURL = "http://example.org/"
+languageCode = "ru-RU"
+defaultContentLanguage = "ru"
+title = "Голубков Павел | Заметки о фронтенде"
+[taxonomies]
+  tag = "tags"

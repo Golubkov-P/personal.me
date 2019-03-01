@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+    {{ partial "head.html" . }}
+
+    <body>
+        <div class="with-footer">
+            {{ partial "header.html" . }}
+
+            <main role="main">
+                <div class="container">
+                    <h1>
+                        {{ .Page.Title }}
+                    </h1>
+
+                    {{ .Page.Content }}
+                </div>
+            </main>
+        </div>
+
+        {{ partial "footer.html" . }}
+    </body>

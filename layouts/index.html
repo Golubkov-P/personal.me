@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+    {{ partial "head.html" . }}
+
+    <body>
+        <div class="with-footer">
+            {{ partial "header.html" . }}
+
+            <main role="main">
+                <div class="container">
+                    {{ range .Pages }}
+                    <article class="article" itemscope itemtype="http://schema.org/Blog">
+                        <h2 class="article__title" itemprop="headline">
+                            <a class="article__link link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        </h2>
+                        <span class="article__meta">
+                            <time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">
+                                {{ .Date.Format "January 02, 2006" }}
+                            </time>
+                        </span>
+                    </article>
+                    {{ end }}
+                </div>
+            </main>
+        </div>
+
+        {{ partial "footer.html" . }}
+    </body>
