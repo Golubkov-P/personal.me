@@ -1,8 +1,11 @@
+os: osx
 language: node_js
 
-install:
-  - sudo apt-get update
-  - sudo apt-get install hugo
+addons:
+  homebrew:
+    packages:
+      - hugo
+    update: true
 
 script:
   - hugo
