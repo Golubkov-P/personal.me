@@ -51,12 +51,12 @@ li {
     color: red;
 }
 
-.link {
+a {
     color: #EB0054;
 }
 
-.link:hover,
-.link:focus {
+a:hover,
+a:focus {
     text-decoration: none;
 }
 
@@ -113,4 +113,9 @@ li {
     height: 80px;
     margin-top: -80px;
     padding: 20px 0;
+}
+
+.footer-content {
+    text-align: center;
+    color: #394247;
 }
